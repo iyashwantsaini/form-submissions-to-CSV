@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ratingForm</title>
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <!-- Adding Custom CSS -->
+    <link type="text/css" rel="stylesheet" href="style.css"  media="screen,projection"/>
+    <!-- fontAwesome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/all.css" integrity="sha384-wxqG4glGB3nlqX0bi23nmgwCSjWIW13BdLUEYC4VIMehfbcro/ATkyDsF/AbIOVe" crossorigin="anonymous">
+
+    <!--Import bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+       <!-- including custom JS -->
+       <script src="function.js"></script>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+</head>
+<body class="font">
+<!-- adding navbar -->
+<header class="navbar">
+        <section class="navbar-section"></section>
+        <section class="navbar-center">
+        <i class="fas fa-code"></i>
+        </section>
+        <section class="navbar-section">
+        </section>
+</header>
+<br>
+<!-- rest of the body -->
+<div class="container">
+<hr class="my-4">
+
+<form>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+      <input type="email" class="form-control email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+      <label>Rating</label>
+          <div>
+              <table>
+                  <tr id="ptr">
+                      <td><input type="radio" value="1" name="foo" id="1" class="starclass" ></td>
+                      <td><input type="radio" value="1" name="foo" id="2" class="starclass" ></td>
+                      <td><input type="radio" value="1" name="foo" id="3" class="starclass" ></td>
+                      <td><input type="radio" value="1" name="foo" id="4" class="starclass" ></td>
+                      <td><input type="radio" value="1" name="foo" id="5" class="starclass" ></td>
+                  </tr>
+              </table>
+          </div>
+    </div>
+    <button type="submit" class="btn btn-primary submit">SUBMIT</button>
+  </form>
+<br>
+<br>
+
+<div>
+  <button type="button" onclick="download_csv()" class="btn btn-success">Download CSV</button>
+</div>
+    
+<footer>
+  <span><br><br><br></span>
+  <p>Open in Google chrome only.<br>It isn't working in Firefox as of now.</p>
+<br>
+</footer>
+</body>
+</html>
